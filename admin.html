@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>打卡管理端</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container" style="padding-top:1rem">
+      <section class="card">
+        <h1 style="margin-top:0">歌尔生活 · 打卡管理端</h1>
+        <p class="hint">输入管理员令牌后可查看已上传记录（含图片地址）。</p>
+        <label for="adminToken">管理员令牌</label>
+        <input id="adminToken" type="password" placeholder="rockygoerlife" />
+        <button id="loadBtn" class="primary" type="button">加载记录</button>
+        <p id="adminMessage" class="message"></p>
+      </section>
+
+      <section class="card">
+        <h2>上传记录</h2>
+        <ul id="adminRecords"></ul>
+      </section>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
