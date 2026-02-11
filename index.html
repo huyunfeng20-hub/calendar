@@ -1,88 +1,12 @@
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>歌尔生活 · 新年不躺平计划</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="hero card">
-      <img src="assets/goerlife-logo.svg" alt="goerlife" class="logo" />
-      <h1>新年不躺平计划</h1>
-      <p class="subtitle">7天 / 14天 / 21天挑战，每周期可使用1次补卡复活机会。</p>
-    </header>
-
-    <main class="container">
-      <section class="card" id="loginCard">
-        <h2>1. 参与登录</h2>
-        <p class="hint">请先登录，奖励次卡将发放到填写的联系方式号码。</p>
-        <form id="loginForm">
-          <label for="name">姓名</label>
-          <input id="name" type="text" maxlength="20" required placeholder="请输入姓名" />
-
-          <label for="contact">联系方式（手机号）</label>
-          <input id="contact" type="tel" inputmode="numeric" pattern="^1\d{10}$" required placeholder="请输入11位手机号" />
-
-          <button class="primary" type="submit">登录并参加打卡</button>
-        </form>
-        <div id="profile" class="profile hidden">
-          <p><strong>姓名：</strong><span id="profileName"></span></p>
-          <p><strong>联系方式：</strong><span id="profileContact"></span></p>
-          <button id="logoutBtn" class="ghost" type="button">退出并重置数据</button>
-        </div>
-      </section>
-
-      <section class="card disabled" id="challengeCard">
-        <h2>2. 选择挑战周期</h2>
-        <div class="cycle-buttons" role="group" aria-label="挑战周期">
-          <button class="cycle-btn active" data-days="7" type="button">7 天</button>
-          <button class="cycle-btn" data-days="14" type="button">14 天</button>
-          <button class="cycle-btn" data-days="21" type="button">21 天</button>
-        </div>
-      </section>
-
-      <section class="card disabled" id="statusCard">
-        <h2>3. 今日打卡状态</h2>
-        <div class="stat-grid">
-          <div><p class="label">挑战天数</p><p id="totalDays" class="value">7 天</p></div>
-          <div><p class="label">已打卡</p><p id="checkedDays" class="value">0 天</p></div>
-          <div><p class="label">剩余天数</p><p id="remainingDays" class="value">7 天</p></div>
-          <div><p class="label">补卡机会</p><p id="reviveState" class="value">可用（1/1）</p></div>
-        </div>
-        <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
-      </section>
-
-      <section class="card disabled" id="checkinCard">
-        <h2>4. 提交今日打卡</h2>
-        <form id="checkinForm">
-          <label for="proofPhoto">上传凭证图片（必选）</label>
-          <input id="proofPhoto" type="file" accept="image/*" required />
-          <p class="hint">支持上传 运动照片 或 运动APP截图 任意一种。</p>
-
-          <label for="note">备注（可选）</label>
-          <textarea id="note" rows="2" placeholder="如：慢跑30分钟"></textarea>
-
-          <button type="submit" class="primary">完成打卡</button>
-        </form>
-
-        <div class="actions">
-          <button id="reviveBtn" class="ghost" type="button">使用补卡复活（补记1天）</button>
-          <button id="shareBtn" class="wechat" type="button">复制分享文案到微信群</button>
-        </div>
-        <p id="message" class="message" role="status" aria-live="polite"></p>
-      </section>
-
-      <section class="card disabled" id="recordsCard">
-        <h2>5. 打卡记录</h2>
-        <ul id="recordsList"></ul>
-      </section>
-    </main>
-
-    <footer class="footer-note">
-      图片提交后将上传到服务器存储。管理端查看：<a href="/admin.html">/admin.html</a>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="assets/goerlife-logo.png" alt="Goerlife Logo">
+    <!-- Other content -->
+</body>
 </html>
